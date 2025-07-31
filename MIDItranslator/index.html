@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MIDI Hex Code Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <section id="input-section">
+      <h2>Input: MIDI Hex Code</h2>
+      <form id="midi-form">
+        <label for="hex">Raw MIDI Hex:</label><br />
+        <input type="text" id="hex" name="hex" placeholder="e.g., 90 3C 7F" />
+        <button type="submit">Convert</button>
+      </form>
+    </section>
+    
+    <section id="output-section">
+      <h2>Output: Decoded MIDI Message</h2>
+      <pre id="output"></pre>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
