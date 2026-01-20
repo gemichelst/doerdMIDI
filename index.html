@@ -1,313 +1,608 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>doerdMIDI - MIDI Tools Collection</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-light.min.css">
-    <style>
-        body {
-            box-sizing: border-box;
-            min-width: 200px;
-            max-width: 980px;
-            margin: 0 auto;
-            padding: 45px;
-            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-            background-color: #ffffff;
-        }
-        
-        .header-section {
-            text-align: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 50px 40px;
-            border-radius: 12px;
-            margin-bottom: 50px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-        }
-        
-        .header-section h1 {
-            font-size: 3.5em;
-            margin: 0 0 15px 0;
-            font-weight: 300;
-            letter-spacing: 2px;
-        }
-        
-        .header-section p {
-            font-size: 1.2em;
-            margin: 0;
-            opacity: 0.95;
-        }
-        
-        .tools-container {
-            display: flex;
-            gap: 40px;
-            margin: 50px 0;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        
-        .tool-section {
-            flex: 1;
-            min-width: 350px;
-            max-width: 450px;
-            background: #f8f9fa;
-            padding: 40px;
-            border-radius: 12px;
-            border: 1px solid #e1e4e8;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            text-align: center;
-        }
-        
-        .tool-section:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-        }
-        
-        .tool-icon-link {
-            display: inline-block;
-            margin-bottom: 25px;
-            transition: transform 0.2s ease;
-        }
-        
-        .tool-icon-link:hover {
-            transform: scale(1.05);
-        }
-        
-        .tool-icon {
-            width: 150px;
-            height: 150px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: box-shadow 0.2s ease;
-        }
-        
-        .tool-icon:hover {
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-        }
-        
-        .tool-title {
-            margin: 20px 0 15px 0;
-            color: #24292e;
-            font-size: 2.2em;
-            font-weight: 600;
-        }
-        
-        .tool-description {
-            color: #586069;
-            line-height: 1.7;
-            margin-bottom: 30px;
-            font-size: 1.1em;
-        }
-        
-        .launch-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-decoration: none;
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 1.05em;
-            transition: all 0.2s ease;
-            box-shadow: 0 3px 12px rgba(102, 126, 234, 0.3);
-        }
-        
-        .launch-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-            color: white;
-            text-decoration: none;
-        }
-        
-        .info-section {
-            background: #f6f8fa;
-            padding: 40px;
-            border-radius: 12px;
-            margin-top: 60px;
-            border: 1px solid #e1e4e8;
-        }
-        
-        .info-section h2 {
-            color: #24292e;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        
-        .info-section h3 {
-            color: #586069;
-            font-size: 1.5em;
-            margin: 25px 0 15px 0;
-        }
-        
-        .info-section ul {
-            line-height: 1.8;
-        }
-        
-        .info-section li {
-            margin-bottom: 8px;
-            color: #24292e;
-        }
-        
-        .github-link {
-            color: #0366d6;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        
-        .github-link:hover {
-            text-decoration: underline;
-        }
-        
-        .footer {
-            text-align: center;
-            margin-top: 60px;
-            padding: 30px;
-            color: #586069;
-            border-top: 1px solid #e1e4e8;
-        }
-        
-        @media (max-width: 768px) {
-            .tools-container {
-                flex-direction: column;
-                gap: 30px;
-            }
-            
-            .tool-section {
-                min-width: auto;
-                max-width: none;
-            }
-            
-            .header-section {
-                padding: 30px 20px;
-            }
-            
-            .header-section h1 {
-                font-size: 2.5em;
-            }
-            
-            body {
-                padding: 20px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .tool-section {
-                padding: 25px 15px;
-            }
-            
-            .tool-title {
-                font-size: 1.8em;
-            }
-            
-            .info-section {
-                padding: 25px 20px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary Meta Tags -->
+  <title>doerdMIDI – Professional MIDI Tools Collection</title>
+  <meta name="title" content="doerdMIDI – Professional MIDI Tools Collection" />
+  <meta name="description" content="Browser-based MIDI tools for musicians and developers. Organize, translate, and manage your MIDI workflow with modern web technology." />
+  <meta name="keywords" content="MIDI, MIDI tools, music production, MIDI organizer, MIDI translator, liveset manager, Berlin" />
+  <meta name="author" content="DOERD" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="German" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://midi.doerd.de/" />
+  <meta property="og:title" content="doerdMIDI – Professional MIDI Tools Collection" />
+  <meta property="og:description" content="Browser-based MIDI tools for musicians and developers." />
+  <meta property="og:site_name" content="doerdMIDI" />
+  <meta property="og:locale" content="de_DE" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://midi.doerd.de/" />
+  <meta property="twitter:title" content="doerdMIDI – Professional MIDI Tools Collection" />
+  <meta property="twitter:description" content="Browser-based MIDI tools for musicians and developers." />
+  <meta property="twitter:creator" content="@doerd" />
+
+  <!-- Additional Meta Tags -->
+  <meta name="theme-color" content="#000000" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="doerdMIDI" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+      background: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Animated gradient background */
+    .background {
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(135deg, #0a0a1e 0%, #1a0033 25%, #0a001a 50%, #001a2e 75%, #0a0a1e 100%);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+      z-index: -1;
+    }
+
+    @keyframes gradientShift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    /* Glow overlay */
+    .background::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(circle at 20% 30%, rgba(236, 72, 153, 0.15), transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(34, 211, 238, 0.12), transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.1), transparent 50%);
+      animation: glowPulse 8s ease-in-out infinite;
+    }
+
+    @keyframes glowPulse {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 60px 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Header Section */
+    .header {
+      text-align: center;
+      margin-bottom: 80px;
+      animation: fadeInDown 1s ease;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .logo-icon {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      background: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(139, 92, 246, 0.2));
+      border-radius: 30px;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .header-label {
+      font-size: 0.9rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #999;
+      margin-bottom: 15px;
+    }
+
+    .header-title {
+      font-size: 4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(120deg, #fff 30%, #ec4899 60%, #22d3ee 90%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+      line-height: 1.1;
+    }
+
+    .header-subtitle {
+      font-size: 1.3rem;
+      color: #aaa;
+      font-weight: 300;
+    }
+
+    /* Tools Grid */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-bottom: 80px;
+    }
+
+    .tool-card {
+      position: relative;
+      background: rgba(15, 15, 30, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      padding: 40px 30px;
+      text-align: center;
+      cursor: pointer;
+      overflow: hidden;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+      backdrop-filter: blur(20px);
+      animation: fadeInUp 0.8s ease backwards;
+    }
+
+    .tool-card:nth-child(1) { animation-delay: 0.1s; }
+    .tool-card:nth-child(2) { animation-delay: 0.2s; }
+    .tool-card:nth-child(3) { animation-delay: 0.3s; }
+    .tool-card:nth-child(4) { animation-delay: 0.4s; }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .tool-card::before {
+      content: "";
+      position: absolute;
+      inset: -2px;
+      background: linear-gradient(45deg, transparent, rgba(236, 72, 153, 0.5), transparent);
+      border-radius: 24px;
+      opacity: 0;
+      transition: opacity 0.6s ease;
+      z-index: -1;
+    }
+
+    .tool-card:nth-child(2)::before {
+      background: linear-gradient(45deg, transparent, rgba(34, 211, 238, 0.5), transparent);
+    }
+
+    .tool-card:nth-child(3)::before {
+      background: linear-gradient(45deg, transparent, rgba(168, 85, 247, 0.5), transparent);
+    }
+
+    .tool-card:nth-child(4)::before {
+      background: linear-gradient(45deg, transparent, rgba(139, 255, 170, 0.5), transparent);
+    }
+
+    .tool-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      border-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .tool-card:hover::before {
+      opacity: 1;
+    }
+
+    .tool-icon-wrapper {
+      width: 140px;
+      height: 140px;
+      margin: 0 auto 30px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .tool-card:hover .tool-icon-wrapper {
+      transform: scale(1.05) rotate(2deg);
+      border-color: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .tool-icon {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .tool-card:hover .tool-icon {
+      transform: scale(1.1);
+    }
+
+    .tool-title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+
+    .tool-card:nth-child(1) .tool-title {
+      background: linear-gradient(120deg, #fff, #ec4899);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .tool-card:nth-child(2) .tool-title {
+      background: linear-gradient(120deg, #fff, #22d3ee);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .tool-card:nth-child(3) .tool-title {
+      background: linear-gradient(120deg, #fff, #a855f7);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .tool-card:nth-child(4) .tool-title {
+      background: linear-gradient(120deg, #fff, #8bffaa);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .tool-description {
+      color: #aaa;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      font-size: 1rem;
+    }
+
+    .tool-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .tool-button:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.4);
+      transform: translateX(4px);
+    }
+
+    .tool-arrow {
+      transition: transform 0.3s ease;
+    }
+
+    .tool-button:hover .tool-arrow {
+      transform: translateX(4px);
+    }
+
+    /* Info Section */
+    .info-section {
+      background: rgba(15, 15, 30, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      padding: 50px 40px;
+      backdrop-filter: blur(20px);
+      margin-bottom: 60px;
+      animation: fadeInUp 1s ease 0.5s backwards;
+    }
+
+    .info-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      background: linear-gradient(120deg, #fff, #a855f7);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .info-section h3 {
+      font-size: 1.4rem;
+      color: #ddd;
+      margin: 30px 0 15px 0;
+    }
+
+    .info-section p {
+      color: #aaa;
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    .info-section ul {
+      list-style: none;
+      margin-top: 15px;
+    }
+
+    .info-section li {
+      color: #bbb;
+      padding: 8px 0;
+      padding-left: 25px;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    .info-section li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: #ec4899;
+    }
+
+    .github-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #22d3ee;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .github-link:hover {
+      color: #fff;
+      transform: translateX(4px);
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      color: #666;
+    }
+
+    .footer p {
+      margin-bottom: 15px;
+    }
+
+    .footer a {
+      color: #999;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer a:hover {
+      color: #fff;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        padding: 40px 20px;
+      }
+
+      .header {
+        margin-bottom: 50px;
+      }
+
+      .logo-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 3rem;
+      }
+
+      .header-title {
+        font-size: 2.5rem;
+      }
+
+      .header-subtitle {
+        font-size: 1.1rem;
+      }
+
+      .tools-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .tool-card {
+        padding: 30px 20px;
+      }
+
+      .tool-icon-wrapper {
+        width: 100px;
+        height: 100px;
+      }
+
+      .tool-title {
+        font-size: 1.5rem;
+      }
+
+      .info-section {
+        padding: 30px 25px;
+      }
+
+      .info-section h2 {
+        font-size: 1.6rem;
+      }
+
+      .info-section h3 {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
 </head>
-<body class="markdown-body">
+<body>
+  <div class="background"></div>
 
-<div class="header-section">
-    <h1>doerdMIDI</h1>
-    <p>MIDI tools collection</p>
-</div>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-icon">🎹</div>
+      <div class="header-label">Professional Tools</div>
+      <h1 class="header-title">doerdMIDI</h1>
+      <p class="header-subtitle">Browser-basierte MIDI-Tools für Musiker und Entwickler</p>
+    </header>
 
-<div class="tools-container">
-    <div class="tool-section">
-        <a href="https://gemichelst.github.io/doerdMIDI/MIDIorganiser/" class="tool-icon-link">
-            <img src="midiOrganizer.png" alt="MIDI Organizer" class="tool-icon">
-        </a>
+    <!-- Tools Grid -->
+    <div class="tools-grid">
+      <!-- MIDI Organizer -->
+      <a href="https://gemichelst.github.io/doerdMIDI/MIDIorganiser/" class="tool-card" style="text-decoration: none;">
+        <div class="tool-icon-wrapper">
+          <img src="midiOrganizer.png" alt="MIDI Organizer" class="tool-icon" />
+        </div>
         <h2 class="tool-title">MIDIorganizer</h2>
         <p class="tool-description">
-            Organisiere deine MIDI-Geräte und behalte den Überblick über MIDI-Ausgänge und Daten.
-            Jedes Gerät und jeder Controller kann mit seinen MIDI-Daten aufgelistet werden.
+          Organisiere deine MIDI-Geräte und behalte den Überblick über MIDI-Ausgänge und Daten. 
+          Jedes Gerät und jeder Controller kann mit seinen MIDI-Daten aufgelistet werden.
         </p>
-        <a href="https://gemichelst.github.io/doerdMIDI/MIDIorganiser/" class="launch-button">
-            Tool starten →
-        </a>
-    </div>
+        <div class="tool-button">
+          Tool starten
+          <span class="tool-arrow">→</span>
+        </div>
+      </a>
 
-    <div class="tool-section">
-        <a href="https://gemichelst.github.io/doerdMIDI/MIDItranslator/" class="tool-icon-link">
-            <img src="midiTranslator.png" alt="MIDI Translator" class="tool-icon">
-        </a>
+      <!-- MIDI Translator -->
+      <a href="https://gemichelst.github.io/doerdMIDI/MIDItranslator/" class="tool-card" style="text-decoration: none;">
+        <div class="tool-icon-wrapper">
+          <img src="midiTranslator.png" alt="MIDI Translator" class="tool-icon" />
+        </div>
         <h2 class="tool-title">MIDItranslator</h2>
         <p class="tool-description">
-            Übersetze rohe MIDI-Input-Hexadezimalwerte in gebräuchliche MIDI-Befehle.
-            Ein unverzichtbares Tool für MIDI-Entwicklung und Debugging.
+          Übersetze rohe MIDI-Input-Hexadezimalwerte in gebräuchliche MIDI-Befehle. 
+          Ein unverzichtbares Tool für MIDI-Entwicklung und Debugging.
         </p>
-        <a href="https://gemichelst.github.io/doerdMIDI/MIDItranslator/" class="launch-button">
-            Tool starten →
-        </a>
-    </div>
+        <div class="tool-button">
+          Tool starten
+          <span class="tool-arrow">→</span>
+        </div>
+      </a>
 
-    <div class="tool-section">
-        <a href="livesetManager/" class="tool-icon-link">
-            <img src="livesetManager/livesetManager.png" alt="livesetManager" class="tool-icon">
-        </a>
+      <!-- Liveset Manager -->
+      <a href="livesetManager/" class="tool-card" style="text-decoration: none;">
+        <div class="tool-icon-wrapper">
+          <img src="livesetManager/livesetManager.png" alt="Liveset Manager" class="tool-icon" />
+        </div>
         <h2 class="tool-title">liveSetMANAGER</h2>
         <p class="tool-description">
-            Manage and play our liveset visually. 
+          Verwalte und spiele dein Liveset visuell. Perfekt für Live-Performances mit intuitivem Interface 
+          und Echtzeit-Kontrolle über deine gesamte Show.
         </p>
-        <a href="livesetManager/" class="launch-button">
-            Tool starten →
-        </a>
-    </div>
-    <div class="tool-section">
-        <a href="setlistManager/" class="tool-icon-link">
-            <img src="setlistManager/setlistManager.png" alt="setlistManager" class="tool-icon">
-        </a>
-        <h2 class="tool-title">liveSetMANAGER</h2>
-        <p class="tool-description">
-            Manage and play our liveset visually. 
-        </p>
-        <a href="setlistManager/" class="launch-button">
-            Tool starten →
-        </a>
-    </div>
-</div>
+        <div class="tool-button">
+          Tool starten
+          <span class="tool-arrow">→</span>
+        </div>
+      </a>
 
-<div class="info-section">
-    <h2>📋 Über das Projekt</h2>
-    <p>
+      <!-- Setlist Manager -->
+      <a href="setlistManager/" class="tool-card" style="text-decoration: none;">
+        <div class="tool-icon-wrapper">
+          <img src="setlistManager/setlistManager.png" alt="Setlist Manager" class="tool-icon" />
+        </div>
+        <h2 class="tool-title">setListMANAGER</h2>
+        <p class="tool-description">
+          Plane und organisiere deine Setlists professionell. Behalte die Übersicht über Songs, 
+          Timing und Übergänge für perfekte Live-Auftritte.
+        </p>
+        <div class="tool-button">
+          Tool starten
+          <span class="tool-arrow">→</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Info Section -->
+    <section class="info-section">
+      <h2>📋 Über das Projekt</h2>
+      <p>
         <strong>doerdMIDI</strong> ist eine Sammlung von MIDI-Tools für Musiker und Entwickler. 
         Alle Tools sind browser-basiert und nutzen moderne Web-APIs für die MIDI-Integration.
-    </p>
+      </p>
 
-    <h3>✨ Features</h3>
-    <ul>
-        <li>Browser-basierte Tools - keine Installation erforderlich</li>
+      <h3>✨ Features</h3>
+      <ul>
+        <li>Browser-basierte Tools – keine Installation erforderlich</li>
         <li>Moderne Web MIDI API Integration</li>
         <li>Responsive Design für alle Geräte</li>
         <li>Open Source und kostenlos</li>
         <li>Echtzeit MIDI-Verarbeitung</li>
         <li>Intuitive Benutzeroberfläche</li>
-    </ul>
+      </ul>
 
-    <h3>🔧 Technische Details</h3>
-    <ul>
+      <h3>🔧 Technische Details</h3>
+      <ul>
         <li>Progressive Web App (PWA) Technologie</li>
         <li>Web MIDI API für Hardware-Integration</li>
         <li>Responsive CSS Grid Layouts</li>
         <li>Cross-Browser Kompatibilität</li>
-    </ul>
+        <li>Moderne ES6+ JavaScript</li>
+        <li>Performance-optimiert</li>
+      </ul>
 
-    <p style="margin-top: 30px;">
-        <a href="https://github.com/gemichelst/doerdMIDI" class="github-link" target="_blank">
-            📁 GitHub Repository anzeigen
-        </a>
-    </p>
-</div>
+      <a href="https://github.com/gemichelst/doerdMIDI" class="github-link" target="_blank">
+        📁 GitHub Repository anzeigen →
+      </a>
+    </section>
 
-<div class="footer">
-    <p><strong>doerdMIDI</strong> - Entwickelt für die MIDI-Community</p>
-    <p>
-        <a href="https://github.com/gemichelst/doerdMIDI" class="github-link" target="_blank">GitHub</a> | 
-        <a href="mailto:contact@doerdmidi.com" class="github-link">Kontakt</a>
-    </p>
-</div>
-
+    <!-- Footer -->
+    <footer class="footer">
+      <p><strong>doerdMIDI</strong> – Entwickelt für die MIDI-Community</p>
+      <p>
+        <a href="https://github.com/gemichelst/doerdMIDI" target="_blank">GitHub</a> | 
+        <a href="mailto:contact@doerd.de">Kontakt</a> |
+        <a href="https://doerd.de" target="_blank">doerd.de</a>
+      </p>
+      <p style="margin-top: 20px; font-size: 0.85rem;">© 2026 DOERD. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
