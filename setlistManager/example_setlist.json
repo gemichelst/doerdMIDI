@@ -1,0 +1,310 @@
+{
+  "id": "setlist-1737350600000-dj01",
+  "name": "Berlin Club Night - Techno Set",
+  "createdAt": "2026-01-20T01:00:00.000Z",
+  "updatedAt": "2026-01-20T01:45:00.000Z",
+  "songs": [
+    {
+      "id": "song-dj-001",
+      "title": "Intro - Ambient Build",
+      "tempo": 120,
+      "key": "Am",
+      "notes": "Slow build from silence. Filter sweep incoming. 32 bars.",
+      "createdAt": "2026-01-20T01:00:01.000Z",
+      "snapshots": [
+        {
+          "id": "snap-dj-001-a",
+          "name": "Ambient Pad",
+          "timestamp": "2026-01-20T01:00:02.000Z",
+          "cc_state": {
+            "program_change": 89,
+            "cc_values": {
+              "0-7": 40,
+              "0-74": 20,
+              "0-71": 30,
+              "0-91": 80,
+              "0-93": 70
+            }
+          }
+        },
+        {
+          "id": "snap-dj-001-b",
+          "name": "Filter Open",
+          "timestamp": "2026-01-20T01:00:03.000Z",
+          "cc_state": {
+            "program_change": 89,
+            "cc_values": {
+              "0-7": 70,
+              "0-74": 80,
+              "0-71": 70,
+              "0-91": 75,
+              "0-93": 65
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "song-dj-002",
+      "title": "Track 1 - Minimal Kick",
+      "tempo": 128,
+      "key": "Em",
+      "notes": "Drop the kick! Minimal drums. Keep it hypnotic. 64 bars.",
+      "createdAt": "2026-01-20T01:00:04.000Z",
+      "snapshots": [
+        {
+          "id": "snap-dj-002-a",
+          "name": "Kick + Hi-Hat",
+          "timestamp": "2026-01-20T01:00:05.000Z",
+          "cc_state": {
+            "program_change": 120,
+            "cc_values": {
+              "0-7": 100,
+              "0-74": 50,
+              "0-71": 40,
+              "0-93": 30
+            }
+          }
+        },
+        {
+          "id": "snap-dj-002-b",
+          "name": "Add Bass",
+          "timestamp": "2026-01-20T01:00:06.000Z",
+          "cc_state": {
+            "program_change": 38,
+            "cc_values": {
+              "0-7": 110,
+              "0-74": 60,
+              "0-71": 50,
+              "0-93": 35
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "song-dj-003",
+      "title": "Track 2 - Acid Line",
+      "tempo": 132,
+      "key": "Gm",
+      "notes": "TB-303 style acid bassline. Resonance automation live. Crowd goes wild here!",
+      "createdAt": "2026-01-20T01:00:07.000Z",
+      "snapshots": [
+        {
+          "id": "snap-dj-003-a",
+          "name": "Acid Low Res",
+          "timestamp": "2026-01-20T01:00:08.000Z",
+          "cc_state": {
+            "program_change": 38,
+            "cc_values": {
+              "0-7": 105,
+              "0-74": 40,
+              "0-71": 80,
+              "0-1": 10
+            }
+          }
+        },
+        {
+          "id": "snap-dj-003-b",
+          "name": "Acid High Res",
+          "timestamp": "2026-01-20T01:00:09.000Z",
+          "cc_state": {
+            "program_change": 38,
+            "cc_values": {
+              "0-7": 110,
+              "0-74": 90,
+              "0-71": 110,
+              "0-1": 60
+            }
+          }
+        },
+        {
+          "id": "snap-dj-003-c",
+          "name": "Acid Screaming",
+          "timestamp": "2026-01-20T01:00:10.000Z",
+          "cc_state": {
+            "program_change": 38,
+            "cc_values": {
+              "0-7": 115,
+              "0-74": 120,
+              "0-71": 127,
+              "0-1": 100
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "song-dj-004",
+      "title": "Track 3 - Breakdown",
+      "tempo": 128,
+      "key": "Dm",
+      "notes": "Strip it back. Remove kick for 16 bars. Build tension. Lots of reverb.",
+      "createdAt": "2026-01-20T01:00:11.000Z",
+      "snapshots": [
+        {
+          "id": "snap-dj-004-a",
+          "name": "No Kick - Atmospheric",
+          "timestamp": "2026-01-20T01:00:12.000Z",
+          "cc_state": {
+            "program_change": 89,
+            "cc_values": {
+              "0-7": 70,
+              "0-74": 30,
+              "0-91": 100,
+              "0-93": 90
+            }
+          }
+        },
+        {
+          "id": "snap-dj-004-b",
+          "name": "Build Up",
+          "timestamp": "2026-01-20T01:00:13.000Z",
+          "cc_state": {
+            "program_change": 99,
+            "cc_values": {
+              "0-7": 90,
+              "0-74": 70,
+              "0-71": 80,
+              "0-91": 90,
+              "0-93": 85
+            }
+          }
+        },
+        {
+          "id": "snap-dj-004-c",
+          "name": "DROP!",
+          "timestamp": "2026-01-20T01:00:14.000Z",
+          "cc_state": {
+            "program_change": 120,
+            "cc_values": {
+              "0-7": 127,
+              "0-74": 100,
+              "0-71": 90,
+              "0-91": 60,
+              "0-93": 50
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "song-dj-005",
+      "title": "Track 4 - Peak Time Bomb",
+      "tempo": 135,
+      "key": "Am",
+      "notes": "Peak time! Full energy. Ride this for 10 minutes. Layer everything.",
+      "createdAt": "2026-01-20T01:00:15.000Z",
+      "snapshots": [
+        {
+          "id": "snap-dj-005-a",
+          "name": "Full Power",
+          "timestamp": "2026-01-20T01:00:16.000Z",
+          "cc_state": {
+            "program_change": 120,
+            "cc_values": {
+              "0-7": 120,
+              "0-74": 90,
+              "0-71": 85
+            }
+          }
+        },
+        {
+          "id": "snap-dj-005-b",
+          "name": "Add Lead Synth",
+          "timestamp": "2026-01-20T01:00:17.000Z",
+          "cc_state": {
+            "program_change": 81,
+            "cc_values": {
+              "0-7": 115,
+              "0-74": 80,
+              "0-71": 70,
+              "0-1": 40
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "song-dj-006",
+      "title": "Track 5 - Melodic Interlude",
+      "tempo": 124,
+      "key": "F",
+      "notes": "Bring it down a bit. Melodic moment. Let people breathe. Beautiful chords.",
+      "createdAt": "2026-01-20T01:00:18.000Z",
+      "snapshots": [
+        {
+          "id": "snap-dj-006",
+          "name": "Warm Chords",
+          "timestamp": "2026-01-20T01:00:19.000Z",
+          "cc_state": {
+            "program_change": 89,
+            "cc_values": {
+              "0-7": 90,
+              "0-74": 60,
+              "0-91": 70,
+              "0-93": 65,
+              "0-1": 30
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "song-dj-007",
+      "title": "Closing Track - Euphoric",
+      "tempo": 130,
+      "key": "C",
+      "notes": "Last track. Send them home happy. Big uplifting melody. Fade out at the end.",
+      "createdAt": "2026-01-20T01:00:20.000Z",
+      "snapshots": [
+        {
+          "id": "snap-dj-007-a",
+          "name": "Euphoric Lead",
+          "timestamp": "2026-01-20T01:00:21.000Z",
+          "cc_state": {
+            "program_change": 81,
+            "cc_values": {
+              "0-7": 110,
+              "0-74": 75,
+              "0-71": 80,
+              "0-1": 50,
+              "0-91": 60
+            }
+          }
+        },
+        {
+          "id": "snap-dj-007-b",
+          "name": "Final Chorus - Max",
+          "timestamp": "2026-01-20T01:00:22.000Z",
+          "cc_state": {
+            "program_change": 81,
+            "cc_values": {
+              "0-7": 125,
+              "0-74": 90,
+              "0-71": 95,
+              "0-1": 70,
+              "0-91": 70,
+              "0-93": 60
+            }
+          }
+        },
+        {
+          "id": "snap-dj-007-c",
+          "name": "Fade Out",
+          "timestamp": "2026-01-20T01:00:23.000Z",
+          "cc_state": {
+            "program_change": 89,
+            "cc_values": {
+              "0-7": 60,
+              "0-74": 40,
+              "0-91": 85,
+              "0-93": 80
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+

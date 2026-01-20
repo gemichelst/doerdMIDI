@@ -1,0 +1,575 @@
+/* ===== PERFORMANCE MODE OVERLAY ===== */
+.performance-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.performance-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+        "clock clock clock"
+        "current current current"
+        "channels upcoming notes"
+        "controls controls controls";
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-columns: 1fr 350px 350px;
+    gap: 1.5rem;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+/* ===== MASTER CLOCK ===== */
+.master-clock {
+    grid-area: clock;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, var(--bg-medium), var(--bg-dark));
+    border: 2px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem 3rem;
+    box-shadow: var(--shadow-lg);
+}
+
+.clock-display {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    font-family: 'Courier New', monospace;
+}
+
+.total-time {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+    letter-spacing: 2px;
+}
+
+.set-duration {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--text-muted);
+}
+
+.separator {
+    font-size: 3rem;
+    color: var(--text-muted);
+}
+
+.bpm-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.bpm-value {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--success);
+    text-shadow: 0 0 20px rgba(6, 255, 165, 0.5);
+    font-family: 'Courier New', monospace;
+}
+
+.bpm-label {
+    font-size: 1rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ===== CURRENT TRACK DISPLAY ===== */
+.current-track-display {
+    grid-area: current;
+    background: linear-gradient(135deg, var(--bg-card), var(--bg-light));
+    border: 3px solid var(--primary);
+    border-radius: var(--radius-lg);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: 0 0 40px rgba(0, 240, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.current-track-display::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 240, 255, 0.1) 0%, transparent 70%);
+    animation: pulse-glow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+    0%, 100% { opacity: 0.5; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.1); }
+}
+
+.track-number {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    font-size: 8rem;
+    font-weight: 900;
+    color: rgba(0, 240, 255, 0.1);
+    line-height: 1;
+    z-index: 1;
+}
+
+.track-info {
+    position: relative;
+    z-index: 2;
+}
+
+.track-name {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.track-meta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.track-meta .badge {
+    font-size: 1.1rem;
+    padding: 0.5rem 1.25rem;
+}
+
+/* ===== TRACK PROGRESS ===== */
+.track-progress-container {
+    position: relative;
+    z-index: 2;
+}
+
+.progress-bar {
+    height: 20px;
+    background: var(--bg-dark);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--border);
+    margin-bottom: 1rem;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--success), var(--primary));
+    border-radius: 10px;
+    transition: width 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+}
+
+.progress-warning {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 10%;
+    background: linear-gradient(90deg, transparent, var(--danger));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.progress-warning.active {
+    opacity: 1;
+    animation: warning-pulse 0.5s ease-in-out infinite;
+}
+
+@keyframes warning-pulse {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
+}
+
+.progress-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Courier New', monospace;
+    font-size: 1.5rem;
+}
+
+#perf-track-elapsed {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+#perf-track-duration {
+    color: var(--text-muted);
+}
+
+.remaining-time {
+    color: var(--warning);
+    font-weight: 700;
+}
+
+.remaining-time.critical {
+    color: var(--danger);
+    animation: blink 0.5s ease-in-out infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+/* ===== ARRANGEMENT SECTIONS ===== */
+.arrangement-sections {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.section-marker {
+    flex: 1;
+    background: var(--bg-dark);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 0.75rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.section-marker.active {
+    background: var(--primary);
+    color: var(--bg-dark);
+    border-color: var(--primary);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
+    transform: scale(1.1);
+}
+
+.section-marker-name {
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.section-marker-time {
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+/* ===== ACTIVE CHANNELS ===== */
+.active-channels {
+    grid-area: channels;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.active-channels h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.channels-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.channel-status {
+    background: var(--bg-dark);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--channel-color, var(--primary));
+    border-radius: var(--radius-sm);
+    padding: 1rem;
+    transition: var(--transition);
+}
+
+.channel-status:hover {
+    background: var(--bg-light);
+    transform: translateX(5px);
+}
+
+.channel-status-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.channel-status-name {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.channel-status-type {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.channel-status-details {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* ===== UPCOMING TRACKS ===== */
+.upcoming-tracks {
+    grid-area: upcoming;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.upcoming-tracks h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.upcoming-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.upcoming-track {
+    background: var(--bg-dark);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 1rem;
+    transition: var(--transition);
+}
+
+.upcoming-track:hover {
+    background: var(--bg-light);
+    border-color: var(--primary);
+}
+
+.upcoming-track-number {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+}
+
+.upcoming-track-name {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.upcoming-track-info {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+}
+
+/* ===== PERFORMANCE NOTES ===== */
+.performance-notes {
+    grid-area: notes;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.notes-display {
+    background: var(--bg-dark);
+    border-left: 4px solid var(--primary);
+    border-radius: var(--radius-sm);
+    padding: 1rem;
+}
+
+.notes-display h4 {
+    font-size: 0.9rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.notes-display p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.transition-notes {
+    background: var(--bg-dark);
+    border-left: 4px solid var(--warning);
+    border-radius: var(--radius-sm);
+    padding: 1rem;
+}
+
+.transition-notes h4 {
+    font-size: 0.9rem;
+    color: var(--warning);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+/* ===== PERFORMANCE CONTROLS ===== */
+.performance-controls {
+    grid-area: controls;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: var(--bg-medium);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+}
+
+.perf-btn {
+    padding: 1.25rem 2.5rem;
+    border: none;
+    border-radius: var(--radius);
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-prev,
+.btn-next {
+    background: var(--bg-card);
+    color: var(--text-primary);
+    border: 2px solid var(--border);
+}
+
+.btn-prev:hover:not(:disabled),
+.btn-next:hover:not(:disabled) {
+    background: var(--primary);
+    color: var(--bg-dark);
+    border-color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0, 240, 255, 0.4);
+}
+
+.btn-play-pause {
+    background: linear-gradient(135deg, var(--success), var(--primary));
+    color: var(--bg-dark);
+    padding: 1.5rem 4rem;
+    font-size: 1.4rem;
+    box-shadow: 0 8px 30px rgba(6, 255, 165, 0.4);
+}
+
+.btn-play-pause:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 40px rgba(6, 255, 165, 0.6);
+}
+
+.btn-play-pause.playing {
+    background: linear-gradient(135deg, var(--warning), var(--secondary));
+}
+
+.btn-reset {
+    background: var(--bg-card);
+    color: var(--text-primary);
+    border: 2px solid var(--border);
+}
+
+.btn-reset:hover {
+    background: var(--warning);
+    color: var(--bg-dark);
+    border-color: var(--warning);
+}
+
+.btn-exit {
+    background: var(--bg-card);
+    color: var(--text-primary);
+    border: 2px solid var(--border);
+}
+
+.btn-exit:hover {
+    background: var(--danger);
+    color: white;
+    border-color: var(--danger);
+}
+
+.perf-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* ===== RESPONSIVE PERFORMANCE MODE ===== */
+@media (max-width: 1600px) {
+    .performance-container {
+        grid-template-columns: 1fr 300px 300px;
+    }
+    
+    .track-name {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .performance-container {
+        grid-template-areas:
+            "clock"
+            "current"
+            "channels"
+            "upcoming"
+            "notes"
+            "controls";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr 1fr 1fr auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .master-clock {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .total-time {
+        font-size: 2.5rem;
+    }
+    
+    .bpm-value {
+        font-size: 2.5rem;
+    }
+    
+    .track-name {
+        font-size: 1.8rem;
+    }
+    
+    .performance-controls {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .perf-btn {
+        flex: 1;
+        min-width: 120px;
+    }
+}
+

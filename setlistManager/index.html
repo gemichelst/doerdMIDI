@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doerdMIDI - Live Setlist Manager</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/touch-improvements.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-left">
+                <h1>🎹 doerdMIDI Setlist Manager</h1>
+            </div>
+            <div class="header-right">
+                <div id="midi-status" class="midi-status disconnected">
+                    <span class="status-dot"></span>
+                    <span class="status-text">MIDI Disconnected</span>
+                </div>
+                <button id="settings-btn" class="icon-btn">⚙️</button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Setlist Sidebar -->
+            <aside class="setlist-sidebar">
+                <div class="sidebar-header">
+                    <h2>Setlists</h2>
+                    <button id="new-setlist-btn" class="btn btn-primary">+ New</button>
+                </div>
+                <div id="setlist-list" class="setlist-list">
+                    <!-- Dynamically populated -->
+                </div>
+            </aside>
+
+            <!-- Song View -->
+            <section class="song-view">
+                <div id="no-setlist" class="empty-state">
+                    <h2>👋 Welcome to Setlist Manager</h2>
+                    <p>Create your first setlist to get started</p>
+                    <button class="btn btn-primary btn-large">Create Setlist</button>
+                </div>
+
+                <div id="active-setlist" class="active-setlist" style="display: none;">
+                    <!-- Current Song Display -->
+                    <div class="current-song">
+                        <div class="song-header">
+                            <h2 id="current-song-title">Song Title</h2>
+                            <div class="song-meta">
+                                <span id="song-tempo" class="tempo-display">120 BPM</span>
+                                <span id="song-key" class="key-display">Em</span>
+                            </div>
+                        </div>
+
+                        <!-- Snapshots Grid -->
+                        <div id="snapshots-grid" class="snapshots-grid">
+                            <!-- Dynamically populated -->
+                        </div>
+
+                        <!-- Song Notes -->
+                        <div class="song-notes">
+                            <textarea id="song-notes" placeholder="Add notes for this song..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="navigation-controls">
+                        <button id="prev-song-btn" class="nav-btn">← Previous</button>
+                        <div class="song-counter">
+                            <span id="current-index">1</span> / <span id="total-songs">5</span>
+                        </div>
+                        <button id="next-song-btn" class="nav-btn">Next →</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Song List -->
+            <aside class="songs-sidebar">
+                <div class="sidebar-header">
+                    <h2>Songs</h2>
+                    <button id="add-song-btn" class="btn btn-secondary">+ Add</button>
+                </div>
+                <div id="songs-list" class="songs-list">
+                    <!-- Dynamically populated -->
+                </div>
+            </aside>
+        </main>
+
+        <!-- Modals -->
+        <div id="modal-overlay" class="modal-overlay" style="display: none;">
+            <div class="modal">
+                <div class="modal-header">
+                    <h3 id="modal-title">Modal Title</h3>
+                    <button class="modal-close">×</button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                    <!-- Dynamic content -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/midi-manager.js"></script>
+    <script src="js/storage-manager.js"></script>
+    <script src="js/setlist-controller.js"></script>
+    <script src="js/touch-handler.js"></script>
+    <script src="js/animations-controller.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

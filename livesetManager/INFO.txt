@@ -1,0 +1,86 @@
+🎛️ Electronic Music Live Set Planner - Complete Rebuild
+Ich erstelle jetzt ein komplett neues Tool speziell für elektronische Musik Live-Performances mit allen modernen Features!
+
+📊 RESEARCH: Electronic Music Live Set Requirements
+Channel Types & Attributes
+
+1. DRUMS
+   ├── Plugin/Device Name
+   ├── Preset/Kit Name
+   ├── Pattern Number
+   ├── Swing Amount
+   ├── Velocity Curve
+   ├── MIDI Channel
+   └── Notes
+
+2. SYNTH (Lead/Bass/Pad)
+   ├── Plugin Name (Serum, Massive, etc.)
+   ├── Preset Name
+   ├── Layer Number
+   ├── Filter Type
+   ├── LFO Settings
+   ├── MIDI Channel
+   └── Notes
+
+3. EXTERNAL HARDWARE
+   ├── Device Type: Drum Machine, Sampler, Synth, Groovebox
+   ├── Device Model (TR-808, Digitakt, etc.)
+   ├── Patch/Program Number
+   ├── MIDI Channel
+   ├── CV/Gate Routing
+   ├── Audio Routing (Stereo/Mono, Channel)
+   └── Notes
+
+4. PERCUSSION
+   ├── Source (Sample Pack, Plugin, Hardware)
+   ├── Pattern Type
+   ├── Groove Template
+   ├── MIDI Channel
+   └── Notes
+
+5. VOCAL/SAMPLE
+   ├── Sample Name/Path
+   ├── Processing Chain
+   ├── Key/Pitch
+   ├── Time Stretch Settings
+   └── Notes
+
+6. FX/SEND
+   ├── FX Type (Reverb, Delay, etc.)
+   ├── Plugin Name
+   ├── Preset
+   ├── Send Amount
+   ├── Automation
+   └── Notes
+
+7. AUTOMATION LANE
+   ├── Parameter Name
+   ├── Start Value
+   ├── End Value
+   ├── Curve Type
+   └── Notes
+
+8. MASTER/BUS
+   ├── Bus Name
+   ├── Routing
+   ├── FX Chain
+   ├── Level
+   └── Notes
+
+
+Track Metadata Required
+
+- Track Name
+- BPM (Master)
+- Key Signature
+- Play Length (mm:ss)
+- Energy Level (1-10)
+- Genre Tags
+- Transition Type (Cut, Fade, Filter, etc.)
+- Cue Points
+- Scene Markers
+- Color Coding
+- Performance Notes
+- Arrangement Sections (Intro, Build, Drop, Break, Outro)
+
+

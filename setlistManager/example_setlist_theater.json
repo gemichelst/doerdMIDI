@@ -1,0 +1,405 @@
+{
+  "id": "setlist-1737350400000-abc123def",
+  "name": "Phantom of the Opera - Live Performance",
+  "createdAt": "2026-01-20T03:00:00.000Z",
+  "updatedAt": "2026-01-20T03:30:00.000Z",
+  "songs": [
+    {
+      "id": "song-1737350401000-xyz789",
+      "title": "Overture",
+      "tempo": 120,
+      "key": "Dm",
+      "notes": "Watch conductor for tempo changes at bar 64. Crescendo to forte at final chord.",
+      "createdAt": "2026-01-20T03:00:01.000Z",
+      "snapshots": [
+        {
+          "id": "snap-1737350402000-aaa111",
+          "name": "Intro - Organ",
+          "timestamp": "2026-01-20T03:00:02.000Z",
+          "cc_state": {
+            "program_change": 19,
+            "cc_values": {
+              "0-7": 100,
+              "0-1": 0,
+              "0-10": 64,
+              "0-11": 110,
+              "0-74": 80,
+              "0-71": 90
+            }
+          }
+        },
+        {
+          "id": "snap-1737350403000-bbb222",
+          "name": "Main Theme",
+          "timestamp": "2026-01-20T03:00:03.000Z",
+          "cc_state": {
+            "program_change": 0,
+            "cc_values": {
+              "0-7": 95,
+              "0-1": 20,
+              "0-10": 64,
+              "0-11": 100,
+              "0-74": 70,
+              "0-71": 80
+            }
+          }
+        },
+        {
+          "id": "snap-1737350404000-ccc333",
+          "name": "Climax - Full Orchestra",
+          "timestamp": "2026-01-20T03:00:04.000Z",
+          "cc_state": {
+            "program_change": 48,
+            "cc_values": {
+              "0-7": 127,
+              "0-1": 30,
+              "0-10": 64,
+              "0-11": 127,
+              "0-74": 100,
+              "0-71": 100,
+              "0-93": 50
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "song-1737350405000-def456",
+      "title": "Think of Me",
+      "tempo": 92,
+      "key": "D",
+      "notes": "Christine's entrance. Soft piano intro, build gradually. Watch soprano for cues.",
+      "createdAt": "2026-01-20T03:00:05.000Z",
+      "snapshots": [
+        {
+          "id": "snap-1737350406000-ddd444",
+          "name": "Intro - Soft Piano",
+          "timestamp": "2026-01-20T03:00:06.000Z",
+          "cc_state": {
+            "program_change": 0,
+            "cc_values": {
+              "0-7": 60,
+              "0-1": 0,
+              "0-10": 64,
+              "0-11": 60,
+              "0-74": 40,
+              "0-71": 50
+            }
+          }
+        },
+        {
+          "id": "snap-1737350407000-eee555",
+          "name": "Verse 1 - Piano + Strings",
+          "timestamp": "2026-01-20T03:00:07.000Z",
+          "cc_state": {
+            "program_change": 0,
+            "cc_values": {
+              "0-7": 75,
+              "0-1": 10,
+              "0-10": 64,
+              "0-11": 75,
+              "0-74": 60,
+              "0-71": 65,
+              "0-93": 30
+            }
+          }
+        },
+        {
+          "id": "snap-1737350408000-fff666",
+          "name": "Chorus - Full",
+          "timestamp": "2026-01-20T03:00:08.000Z",
+          "cc_state": {
+            "program_change": 0,
+            "cc_values": {
+              "0-7": 95,
+              "0-1": 25,
+              "0-10": 64,
+              "0-11": 95,
+              "0-74": 80,
+              "0-71": 85,
+              "0-93": 45
+            }
+          }
+        },
+        {
+          "id": "snap-1737350409000-ggg777",
+          "name": "Final Note - Hold",
+          "timestamp": "2026-01-20T03:00:09.000Z",
+          "cc_state": {
+            "program_change": 48,
+            "cc_values": {
+              "0-7": 110,
+              "0-1": 50,
+              "0-10": 64,
+              "0-11": 110,
+              "0-74": 90,
+              "0-71": 95,
+              "0-93": 60
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "song-1737350410000-ghi789",
+      "title": "Angel of Music",
+      "tempo": 88,
+      "key": "Em",
+      "notes": "Mysterious atmosphere. Use reverb heavily. Christine and Meg duet.",
+      "createdAt": "2026-01-20T03:00:10.000Z",
+      "snapshots": [
+        {
+          "id": "snap-1737350411000-hhh888",
+          "name": "Mysterious Intro",
+          "timestamp": "2026-01-20T03:00:11.000Z",
+          "cc_state": {
+            "program_change": 88,
+            "cc_values": {
+              "0-7": 70,
+              "0-1": 40,
+              "0-10": 64,
+              "0-11": 70,
+              "0-74": 85,
+              "0-91": 80,
+              "0-93": 70
+            }
+          }
+        },
+        {
+          "id": "snap-1737350412000-iii999",
+          "name": "Duet - Balanced",
+          "timestamp": "2026-01-20T03:00:12.000Z",
+          "cc_state": {
+            "program_change": 88,
+            "cc_values": {
+              "0-7": 85,
+              "0-1": 30,
+              "0-10": 64,
+              "0-11": 85,
+              "0-74": 75,
+              "0-91": 75,
+              "0-93": 65
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "song-1737350413000-jkl012",
+      "title": "The Phantom of the Opera",
+      "tempo": 138,
+      "key": "Dm",
+      "notes": "Title song! High energy. Organ dominant. Watch for dramatic pauses.",
+      "createdAt": "2026-01-20T03:00:13.000Z",
+      "snapshots": [
+        {
+          "id": "snap-1737350414000-jjj000",
+          "name": "Intro - Dramatic Organ",
+          "timestamp": "2026-01-20T03:00:14.000Z",
+          "cc_state": {
+            "program_change": 19,
+            "cc_values": {
+              "0-7": 120,
+              "0-1": 0,
+              "0-10": 64,
+              "0-11": 120,
+              "0-74": 95,
+              "0-71": 100
+            }
+          }
+        },
+        {
+          "id": "snap-1737350415000-kkk111",
+          "name": "Verse - Phantom Solo",
+          "timestamp": "2026-01-20T03:00:15.000Z",
+          "cc_state": {
+            "program_change": 19,
+            "cc_values": {
+              "0-7": 105,
+              "0-1": 10,
+              "0-10": 64,
+              "0-11": 105,
+              "0-74": 85,
+              "0-71": 90,
+              "0-93": 40
+            }
+          }
+        },
+        {
+          "id": "snap-1737350416000-lll222",
+          "name": "Chorus - Christine Join",
+          "timestamp": "2026-01-20T03:00:16.000Z",
+          "cc_state": {
+            "program_change": 19,
+            "cc_values": {
+              "0-7": 115,
+              "0-1": 25,
+              "0-10": 64,
+              "0-11": 115,
+              "0-74": 90,
+              "0-71": 95,
+              "0-93": 50
+            }
+          }
+        },
+        {
+          "id": "snap-1737350417000-mmm333",
+          "name": "Final - Triumphant",
+          "timestamp": "2026-01-20T03:00:17.000Z",
+          "cc_state": {
+            "program_change": 19,
+            "cc_values": {
+              "0-7": 127,
+              "0-1": 40,
+              "0-10": 64,
+              "0-11": 127,
+              "0-74": 100,
+              "0-71": 100,
+              "0-93": 70,
+              "0-91": 60
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "song-1737350418000-mno345",
+      "title": "Music of the Night",
+      "tempo": 72,
+      "key": "Db",
+      "notes": "Slow and intimate. Phantom seducing Christine. Very controlled dynamics.",
+      "createdAt": "2026-01-20T03:00:18.000Z",
+      "snapshots": [
+        {
+          "id": "snap-1737350419000-nnn444",
+          "name": "Intro - Soft Pad",
+          "timestamp": "2026-01-20T03:00:19.000Z",
+          "cc_state": {
+            "program_change": 89,
+            "cc_values": {
+              "0-7": 55,
+              "0-1": 60,
+              "0-10": 64,
+              "0-11": 55,
+              "0-74": 70,
+              "0-91": 85,
+              "0-93": 80
+            }
+          }
+        },
+        {
+          "id": "snap-1737350420000-ooo555",
+          "name": "Verse - Building",
+          "timestamp": "2026-01-20T03:00:20.000Z",
+          "cc_state": {
+            "program_change": 89,
+            "cc_values": {
+              "0-7": 70,
+              "0-1": 65,
+              "0-10": 64,
+              "0-11": 70,
+              "0-74": 75,
+              "0-91": 85,
+              "0-93": 80
+            }
+          }
+        },
+        {
+          "id": "snap-1737350421000-ppp666",
+          "name": "Climax - Passionate",
+          "timestamp": "2026-01-20T03:00:21.000Z",
+          "cc_state": {
+            "program_change": 89,
+            "cc_values": {
+              "0-7": 100,
+              "0-1": 70,
+              "0-10": 64,
+              "0-11": 100,
+              "0-74": 85,
+              "0-91": 90,
+              "0-93": 85
+            }
+          }
+        },
+        {
+          "id": "snap-1737350422000-qqq777",
+          "name": "Ending - Gentle Fade",
+          "timestamp": "2026-01-20T03:00:22.000Z",
+          "cc_state": {
+            "program_change": 89,
+            "cc_values": {
+              "0-7": 45,
+              "0-1": 75,
+              "0-10": 64,
+              "0-11": 45,
+              "0-74": 60,
+              "0-91": 90,
+              "0-93": 85
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "song-1737350423000-pqr678",
+      "title": "All I Ask of You",
+      "tempo": 96,
+      "key": "Eb",
+      "notes": "Romantic duet. Christine and Raoul. Warm and tender. Rubato in places.",
+      "createdAt": "2026-01-20T03:00:23.000Z",
+      "snapshots": [
+        {
+          "id": "snap-1737350424000-rrr888",
+          "name": "Intro - Strings",
+          "timestamp": "2026-01-20T03:00:24.000Z",
+          "cc_state": {
+            "program_change": 48,
+            "cc_values": {
+              "0-7": 80,
+              "0-1": 15,
+              "0-10": 64,
+              "0-11": 80,
+              "0-74": 65,
+              "0-91": 40,
+              "0-93": 35
+            }
+          }
+        },
+        {
+          "id": "snap-1737350425000-sss999",
+          "name": "Duet - Balanced",
+          "timestamp": "2026-01-20T03:00:25.000Z",
+          "cc_state": {
+            "program_change": 48,
+            "cc_values": {
+              "0-7": 90,
+              "0-1": 20,
+              "0-10": 64,
+              "0-11": 90,
+              "0-74": 70,
+              "0-91": 45,
+              "0-93": 40
+            }
+          }
+        },
+        {
+          "id": "snap-1737350426000-ttt000",
+          "name": "Final Chorus - Soaring",
+          "timestamp": "2026-01-20T03:00:26.000Z",
+          "cc_state": {
+            "program_change": 48,
+            "cc_values": {
+              "0-7": 110,
+              "0-1": 30,
+              "0-10": 64,
+              "0-11": 110,
+              "0-74": 85,
+              "0-91": 55,
+              "0-93": 50
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

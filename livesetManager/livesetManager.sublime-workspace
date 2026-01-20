@@ -1,0 +1,924 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"doerd-",
+				"doerd-orbital-v3"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"demo",
+				"demoTrackster"
+			],
+			[
+				"netw",
+				"networkDeviceLister"
+			],
+			[
+				"black",
+				"blackgrey"
+			],
+			[
+				"gradient",
+				"gradient_black"
+			],
+			[
+				"gra",
+				"gradient3"
+			],
+			[
+				"n",
+				"normal"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"sh",
+				"shadow_level2"
+			],
+			[
+				"tra",
+				"transition___opacity2"
+			],
+			[
+				"gradie",
+				"gradientSmoothAnimation"
+			],
+			[
+				"bl",
+				"blackgrey"
+			],
+			[
+				"colum",
+				"column2"
+			],
+			[
+				"s",
+				"stylablebutton-icon"
+			],
+			[
+				"tran",
+				"transparent"
+			],
+			[
+				"ease",
+				"ease-in-out"
+			],
+			[
+				"soundclou",
+				"soundcloudPlayer___mini"
+			],
+			[
+				"anin",
+				"animation-direction"
+			],
+			[
+				"ani",
+				"animation-duration"
+			],
+			[
+				"eas",
+				"ease-in-out"
+			],
+			[
+				"folder",
+				"folder_browser"
+			],
+			[
+				"surve",
+				"surveyFinished"
+			],
+			[
+				"el",
+				"elementId"
+			],
+			[
+				"cur",
+				"currentDate"
+			],
+			[
+				"survey_reminder",
+				"survey_reminderDate"
+			],
+			[
+				"survey_",
+				"survey_finished"
+			],
+			[
+				"timeo",
+				"myTimeout1"
+			],
+			[
+				"time",
+				"myTimeout1"
+			],
+			[
+				"get",
+				"getCookie"
+			],
+			[
+				"animation",
+				"animation-fill-mode"
+			],
+			[
+				"survey",
+				"survey___button"
+			],
+			[
+				"mod",
+				"module-673f808086b7f2556e7813e0"
+			],
+			[
+				"border-left-radius",
+				"border-top-left-radius"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"rotate",
+				"rotate()"
+			],
+			[
+				"starBarStars",
+				"starBarStars___4-5"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"star",
+				"starBar"
+			],
+			[
+				"cont",
+				"container___stars"
+			],
+			[
+				"tile",
+				"tile___meta-col"
+			],
+			[
+				"row",
+				"row___infocontainer"
+			],
+			[
+				"background",
+				"background-position"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"backgrou",
+				"background-position"
+			],
+			[
+				"tool",
+				"tooltip___icon"
+			],
+			[
+				"nth",
+				"nth-of-type"
+			],
+			[
+				"date",
+				"datelocations"
+			],
+			[
+				"row___ye",
+				"row___yellow2"
+			],
+			[
+				"thisUr",
+				"thisUrlId"
+			],
+			[
+				"this",
+				"thisAirportId"
+			],
+			[
+				"new",
+				"newAttrId"
+			],
+			[
+				"f",
+				"fillSelectGPT"
+			],
+			[
+				"display",
+				"displaySeat"
+			],
+			[
+				"tile__",
+				"tile___meta-col"
+			],
+			[
+				"file",
+				"fileExplodeCount"
+			],
+			[
+				"DEBUS",
+				"DEBUGMSG2"
+			],
+			[
+				"ca",
+				"capitalize"
+			],
+			[
+				"tile___info",
+				"tile___infocontainer-col"
+			],
+			[
+				"setCa",
+				"setCategoriesEvent"
+			],
+			[
+				"DEBUGMG",
+				"DEBUGMSG2"
+			],
+			[
+				"category",
+				"categoryClicked"
+			],
+			[
+				"se",
+				"selectTitle"
+			],
+			[
+				"Tok",
+				"tokenValidity"
+			],
+			[
+				"erro",
+				"errorContainerInner"
+			],
+			[
+				"tr",
+				"transition"
+			],
+			[
+				"errorCo",
+				"errorContainerInner"
+			],
+			[
+				"to",
+				"toLowerCase"
+			],
+			[
+				"thisAir",
+				"thisAirlinesFiltered"
+			],
+			[
+				"air",
+				"airlinesFiltered"
+			],
+			[
+				"airlin",
+				"airlinesFiltered"
+			],
+			[
+				"thi",
+				"thisArea"
+			],
+			[
+				"header-menu",
+				"header-menu-airlines"
+			],
+			[
+				"count",
+				"countDownTypo"
+			],
+			[
+				"id",
+				"getElementById"
+			],
+			[
+				"scroll",
+				"scrollTo"
+			],
+			[
+				"fetc",
+				"fetchUrlEndpoint"
+			],
+			[
+				"fet",
+				"fetchUrlAdress"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"label",
+				"label___prompt-enabled"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"thisChat",
+				"thisChatRowID"
+			],
+			[
+				"thisC",
+				"thisChatRowID"
+			],
+			[
+				"thisCha",
+				"thisChatRowHeight"
+			],
+			[
+				"thisCah",
+				"thisChatRowHeight"
+			],
+			[
+				"shadow",
+				"box-shadow"
+			],
+			[
+				"pr",
+				"promptContainer2___inner"
+			],
+			[
+				"blue_",
+				"blue_2"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"container___chat",
+				"container___chatColumnLH"
+			],
+			[
+				"gpt_g",
+				"gpt___green-light"
+			],
+			[
+				"set-o",
+				"set-odd-opacityy"
+			],
+			[
+				"conta",
+				"container___chatColumn"
+			],
+			[
+				"container",
+				"container___chatColumn"
+			],
+			[
+				"thisP",
+				"thisPromptLength"
+			],
+			[
+				"thisPro",
+				"thisPromptLength"
+			],
+			[
+				"thisV",
+				"thisValueLength"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"blue",
+				"blue_54"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"ch",
+				"checkboxAndHelp"
+			],
+			[
+				"sele",
+				"select___options"
+			],
+			[
+				"select",
+				"select___option"
+			],
+			[
+				"b",
+				"blue_85"
+			],
+			[
+				"backgroun",
+				"background-image"
+			],
+			[
+				"trip",
+				"tripadvisor___green"
+			],
+			[
+				"tileID",
+				"tileIDname"
+			],
+			[
+				"bacg",
+				"background-size"
+			],
+			[
+				"che",
+				"checkbox"
+			],
+			[
+				"cate",
+				"categorieNum"
+			],
+			[
+				"cat",
+				"categorieNum"
+			],
+			[
+				"subCate",
+				"subCategorie"
+			],
+			[
+				"gre",
+				"greenwashing"
+			],
+			[
+				"AIR",
+				"airlinesFiltered"
+			],
+			[
+				"airlines",
+				"airlinesFiltered"
+			],
+			[
+				"label-",
+				"label-unchecked"
+			],
+			[
+				"app",
+				"appModuleName"
+			],
+			[
+				"ap",
+				"appName"
+			],
+			[
+				"th",
+				"thisAirline"
+			],
+			[
+				"re",
+				"redrawSlider"
+			],
+			[
+				"social",
+				"social_feeds_slider"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"pulse",
+				"pulseTOKEN"
+			],
+			[
+				"place",
+				"place_id"
+			],
+			[
+				"sub",
+				"subTilesEvent"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"yaml",
+				"Set Syntax: YAML"
+			],
+			[
+				"ackage Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"package c",
+				"Package Control: Disable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"sub",
+				"SublimeLinter: Open diagnostics panel"
+			],
+			[
+				"subl",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"subline",
+				"SublimeLinter: Open diagnostics panel"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"Update",
+				"Help: Check for Updates"
+			],
+			[
+				"",
+				"Preferences: Settings"
+			],
+			[
+				"package",
+				"View Package File"
+			],
+			[
+				"Packa",
+				"View Package File"
+			],
+			[
+				"update",
+				"Help: Check for Updates"
+			],
+			[
+				"Package",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 150.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/DEV/MIDI/livesetManager"
+	],
+	"file_history":
+	[
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/assets/css/doerd-optimized.css",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/Makefile",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/js/default-reoptimized.js",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/assets/css/doerd-orbital-v3.css",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/js/doerd-orbital-v3.js",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/index-optimized.html",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/data/feeds.json",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/assets/css/style.css",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/lib/node_modules/browserslist/index.js",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/.gitignore",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/README.md",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/doerd.de.zip",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/data/contenticons-v3.js",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/index-optimized.backup.html",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/index-orbital-v3.html",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/js/music-player.js",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/index-reoptimized.html",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/js/__default-optimized.js",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/js/default-optimized.js",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/stylus/_base/_keyframes.styl",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/stylus/style.styl",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/stylus/_main.styl",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/stylus/complete.styl",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/assets/css/doerd-sliders.css",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/assets/css/doerd-merged.css",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/carousel.html",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/sliders.html",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/.htaccess",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/demo-player.html",
+		"/Users/m.matzat/Library/Application Support/Sublime Text/Packages/HTMLBeautify/HTMLBeautify.sublime-settings",
+		"/Users/m.matzat/Library/Application Support/Sublime Text/Packages/User/HTMLBeautify.sublime-settings",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/stylus/_sections/_index.styl",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/stylus/_modules/_soundcloud.styl",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/stylus/_modules/_preloader.styl",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/assets/css/doerd-new-p.css",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/js/default.js",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/assets/css/music-player.css",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/index.html",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/js/ytiframeapi.js",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/js/ga.js",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/index.bak.html",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/js/preloader.js",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/stylus/_base/_mixin.styl",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/stylus/_base/_settings.styl",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/stylus/_modules/_logo_background.styl",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/stylus/_modules/_main.styl",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/stylus/_base/_base.styl",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/src/stylus/_sections/_main.styl",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/.htdocs",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/assets/images/logo/2025/doerd__typo-1.svg",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/index-p.html",
+		"/Users/m.matzat/Desktop/bla.svg",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/doerd.xyz-new/assets/css/doerd-new.css",
+		"/Users/m.matzat/Downloads/miditools.html",
+		"/Users/m.matzat/Downloads/artisthub.doerd.de/manifest.json",
+		"/Users/m.matzat/Downloads/artisthub.doerd.de/browserconfig.xml",
+		"/Users/m.matzat/Downloads/doerdHub_Integrated.html",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/cih-review-current/cih-review.html",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/cih-review-current/assets/js/cih-review.js",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/cih-review-current/sh/deploy.sh",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/cih-review-current/cih-review.php",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/HTDOCS/cih-review-current/README.md",
+		"/Users/m.matzat/Desktop/DOERD_ContentHub_black.html",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/DEV/MASCHINE-UPLOADER/upload_maschine_enhanced.sh",
+		"/Users/m.matzat/Desktop/DOERD Content Hub 2025.html",
+		"/Users/m.matzat/.bin/upload_maschine_enhanced.sh",
+		"/Users/m.matzat/.bin/upload_recent_maschine.sh",
+		"/Users/m.matzat/.bin/upload_maschine_quick.sh",
+		"/Users/m.matzat/GIT/myMacUsrProfile/automation.sh",
+		"/Users/m.matzat/GIT/myMacUsrProfile/refresh.sh",
+		"/Users/m.matzat/GIT/myMacUsrProfile/.bin/upload_maschine_enhanced.sh",
+		"/Users/m.matzat/GIT/myMacUsrProfile/.bin/upload_maschine_quick.sh",
+		"/Users/m.matzat/.bin/castMessage",
+		"/Users/m.matzat/GIT/myMacUsrProfile/tmp.sh",
+		"/Users/m.matzat/Downloads/kinderwecker___fixed.yaml",
+		"/Users/m.matzat/Downloads/kinderwecker_stoergeraeusche.yaml",
+		"/Users/m.matzat/Downloads/kidsalarm___current.yaml",
+		"/Users/m.matzat/Downloads/index___ticker_v2.html",
+		"/Users/m.matzat/Downloads/KIDS ALARM NEW.yaml",
+		"/Users/m.matzat/Downloads/index___ticker_v1.html",
+		"/Users/m.matzat/Downloads/index___ticker.html",
+		"/Users/m.matzat/Downloads/playlist-cleaner.lua",
+		"/Users/m.matzat/Downloads/kinderwecker.yaml",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/GFX/PROJECTS/doerd_TRI3D/objects/new/flatt_tri4_obj.svg",
+		"/Users/m.matzat/Downloads/dashboard.json",
+		"/Users/m.matzat/Library/Application Support/iTerm2/Scripts/bla.py",
+		"/Users/m.matzat/Library/Application Support/org.videolan.vlc/ml.xspf",
+		"/Applications/VLC.app/Contents/MacOS/share/lua/http/custom.lua",
+		"/Users/m.matzat/GIT/doerdTOOLS/prelovedMarket/index.html",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/DEV/DOERDtools/index.html",
+		"/Users/m.matzat/Downloads/DOERDtools/index-tabbed.html",
+		"/Users/m.matzat/Library/Application Support/Sublime Text/Packages/Pretty YAML/Pretty YAML.sublime-settings",
+		"/Users/m.matzat/Library/Mobile Documents/com~apple~CloudDocs/Pictures/Unknown_vectorized.svg",
+		"/Users/m.matzat/Desktop/getEbooks.gs",
+		"/Users/m.matzat/Desktop/index.html",
+		"/Users/m.matzat/Library/Application Support/org.videolan.vlc/lua/extensions/userdata/vlsub/vlsub_conf.xml",
+		"/Users/m.matzat/Downloads/usedSlips/prelovedMarket/dist/index.html",
+		"/Users/m.matzat/Downloads/DOERDtools/index.html",
+		"/Users/m.matzat/Downloads/DOERDtools/.gitignore",
+		"/Users/m.matzat/Downloads/DOERDtools/studioNet/index.html",
+		"/Users/m.matzat/Downloads/DOERDtools/demoTrackster/README.md",
+		"/Users/m.matzat/Downloads/DOERDtools/studioNet/README.md",
+		"/Users/m.matzat/Downloads/DOERDtools/studioNet/studioNet-source-code.md",
+		"/Users/m.matzat/Downloads/DOERDtools/demoTrackster/assets/css/style.css",
+		"/Users/m.matzat/GIT/doerdTOOLS/demoTrackster/assets/js/app.js",
+		"/Users/m.matzat/GIT/doerdTOOLS/index.html",
+		"/Users/m.matzat/Downloads/DOERDtools/demoTrackster/SETUP.md",
+		"/Users/m.matzat/Downloads/DOERDtools/demoTrackster/index.html",
+		"/Users/m.matzat/Downloads/DOERDtools/demoTrackster/package.json",
+		"/Users/m.matzat/Downloads/DOERDtools/growBuddyPRO/README.md",
+		"/Users/m.matzat/Downloads/DOERDtools/growBuddyPRO/growBuddy-final/index.html",
+		"/Users/m.matzat/Downloads/DOERDtools/growBuddy/src/index.html",
+		"/Users/m.matzat/Downloads/DOERDtools/network-device-lister/electron/backend/networkScan.js",
+		"/Users/m.matzat/Downloads/DOERDtools/network-device-lister/electron/preload.js",
+		"/Users/m.matzat/Downloads/DOERDtools/network-device-lister/electron/main.js",
+		"/Users/m.matzat/Downloads/DOERDtools/network-device-lister/src/components/EditDeviceModal.tsx",
+		"/Users/m.matzat/Downloads/DOERDtools/network-device-lister/src/components/HostExportBar.tsx",
+		"/Users/m.matzat/Downloads/DOERDtools/network-device-lister/src/components/DeviceTable.tsx",
+		"/Users/m.matzat/Downloads/DOERDtools/network-device-lister/src/components/Searchbar.tsx",
+		"/Users/m.matzat/Downloads/DOERDtools/network-device-lister/src/components/Topbar.tsx",
+		"/Users/m.matzat/Downloads/DOERDtools/network-device-lister/src/components/Sidebar.tsx",
+		"/Users/m.matzat/Downloads/DOERDtools/network-device-lister/src/styles/main.css",
+		"/Users/m.matzat/Downloads/DOERDtools/network-device-lister/src/hooks/useDeviceScanner.ts",
+		"/Users/m.matzat/Downloads/DOERDtools/network-device-lister/src/App.tsx",
+		"/Users/m.matzat/Downloads/DOERDtools/network-device-lister/src/types.ts",
+		"/Users/m.matzat/Downloads/DOERDtools/network-device-lister/public/manifest.json",
+		"/Users/m.matzat/Downloads/DOERDtools/network-device-lister/index.html",
+		"/Users/m.matzat/Downloads/DOERDtools/network-device-lister/tsconfig.node.json"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 136.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 48.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SFTP":
+	{
+		"height": 144.0,
+		"history":
+		[
+		]
+	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 388.0,
+		"history":
+		[
+		]
+	},
+	"output.exec":
+	{
+		"height": 35.0,
+		"history":
+		[
+		]
+	},
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "",
+	"project": "livesetManager.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"cih-skytrax/assets/js/mappings.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 259.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

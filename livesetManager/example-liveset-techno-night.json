@@ -1,0 +1,636 @@
+{
+  "id": "set-1737413200000-techno01",
+  "name": "Berlin Techno Night - Club Set",
+  "masterBPM": 132,
+  "createdAt": "2026-01-20T22:00:00.000Z",
+  "updatedAt": "2026-01-20T22:30:00.000Z",
+  "totalDuration": 3600,
+  "averageEnergy": 7,
+  "tracks": [
+    {
+      "id": "track-001-intro",
+      "name": "Ambient Opening",
+      "bpm": 120,
+      "key": "Am",
+      "mode": "Minor",
+      "duration": "05:00",
+      "durationSeconds": 300,
+      "energy": 3,
+      "genres": ["Ambient Techno", "Atmospheric"],
+      "color": "#667eea",
+      "notes": "Start very soft. Build tension slowly. No kick for first 2 minutes.",
+      "transitionType": "Filter Sweep",
+      "transitionBars": 16,
+      "transitionNotes": "Slowly open filter while introducing kick from next track",
+      "channels": [
+        {
+          "id": "ch-001-pad",
+          "type": "synth",
+          "name": "Atmospheric Pad",
+          "midiChannel": 1,
+          "color": "#00f0ff",
+          "notes": "Keep reverb high, play with filter automation",
+          "typeSpecific": {
+            "synthType": "Pad",
+            "pluginName": "Serum",
+            "presetName": "Dark Atmosphere",
+            "layerNumber": 1,
+            "filterType": "Lowpass",
+            "lfoSettings": "LFO1 -> Filter Cutoff, 1/16"
+          }
+        },
+        {
+          "id": "ch-001-perc",
+          "type": "percussion",
+          "name": "Sparse Percussion",
+          "midiChannel": 2,
+          "color": "#ffbe0b",
+          "notes": "Introduce gradually after 1 minute",
+          "typeSpecific": {
+            "source": "Samples - Techno Toolkit",
+            "patternType": "Minimal Shaker",
+            "grooveTemplate": "Tight"
+          }
+        },
+        {
+          "id": "ch-001-reverb",
+          "type": "fx",
+          "name": "Space Reverb",
+          "midiChannel": 0,
+          "color": "#fb5607",
+          "notes": "Heavy reverb on pad",
+          "typeSpecific": {
+            "fxType": "Reverb",
+            "pluginName": "Valhalla VintageVerb",
+            "presetName": "Large Hall",
+            "sendAmount": 80,
+            "automation": "Reduce send amount during transition"
+          }
+        }
+      ],
+      "sections": [
+        {
+          "id": "sec-001-intro",
+          "name": "Intro",
+          "startTime": 0,
+          "duration": 120
+        },
+        {
+          "id": "sec-001-build",
+          "name": "Build",
+          "startTime": 120,
+          "duration": 120
+        },
+        {
+          "id": "sec-001-transition",
+          "name": "Transition",
+          "startTime": 240,
+          "duration": 60
+        }
+      ],
+      "createdAt": "2026-01-20T22:00:00.000Z"
+    },
+    {
+      "id": "track-002-minimal",
+      "name": "Minimal Groove Foundation",
+      "bpm": 128,
+      "key": "Em",
+      "mode": "Minor",
+      "duration": "08:00",
+      "durationSeconds": 480,
+      "energy": 5,
+      "genres": ["Minimal Techno", "Hypnotic"],
+      "color": "#8338ec",
+      "notes": "Establish the groove. Keep it hypnotic and repetitive. Focus on subtle changes.",
+      "transitionType": "Drum Fill",
+      "transitionBars": 8,
+      "transitionNotes": "Add snare rolls in last 8 bars",
+      "channels": [
+        {
+          "id": "ch-002-kick",
+          "type": "drums",
+          "name": "Deep Kick",
+          "midiChannel": 10,
+          "color": "#ff006e",
+          "notes": "Punchy and deep. Center of the track.",
+          "typeSpecific": {
+            "pluginName": "Battery 4",
+            "presetName": "Techno Essentials",
+            "patternNumber": "A1",
+            "swingAmount": 0,
+            "velocityCurve": "Linear"
+          }
+        },
+        {
+          "id": "ch-002-hats",
+          "type": "drums",
+          "name": "Hi-Hats",
+          "midiChannel": 10,
+          "color": "#ff006e",
+          "notes": "16th notes, subtle variations every 4 bars",
+          "typeSpecific": {
+            "pluginName": "Battery 4",
+            "presetName": "Techno Essentials",
+            "patternNumber": "A2",
+            "swingAmount": 5,
+            "velocityCurve": "Linear"
+          }
+        },
+        {
+          "id": "ch-002-bass",
+          "type": "synth",
+          "name": "Sub Bass",
+          "midiChannel": 2,
+          "color": "#00f0ff",
+          "notes": "Follow kick pattern, sub frequencies only",
+          "typeSpecific": {
+            "synthType": "Bass",
+            "pluginName": "Massive",
+            "presetName": "Sub Terror",
+            "layerNumber": 1,
+            "filterType": "Lowpass",
+            "lfoSettings": ""
+          }
+        },
+        {
+          "id": "ch-002-clap",
+          "type": "drums",
+          "name": "Clap",
+          "midiChannel": 10,
+          "color": "#ff006e",
+          "notes": "On 2 and 4, tight and dry",
+          "typeSpecific": {
+            "pluginName": "Battery 4",
+            "presetName": "Techno Essentials",
+            "patternNumber": "A3",
+            "swingAmount": 0,
+            "velocityCurve": "Linear"
+          }
+        },
+        {
+          "id": "ch-002-perc",
+          "type": "percussion",
+          "name": "Shaker Loop",
+          "midiChannel": 3,
+          "color": "#ffbe0b",
+          "notes": "Continuous 16th pattern",
+          "typeSpecific": {
+            "source": "Live Recording",
+            "patternType": "Continuous 16th",
+            "grooveTemplate": "Shuffle 5%"
+          }
+        }
+      ],
+      "sections": [
+        {
+          "id": "sec-002-groove",
+          "name": "Groove Setup",
+          "startTime": 0,
+          "duration": 180
+        },
+        {
+          "id": "sec-002-develop",
+          "name": "Development",
+          "startTime": 180,
+          "duration": 180
+        },
+        {
+          "id": "sec-002-peak",
+          "name": "Peak",
+          "startTime": 360,
+          "duration": 120
+        }
+      ],
+      "createdAt": "2026-01-20T22:05:00.000Z"
+    },
+    {
+      "id": "track-003-acid",
+      "name": "Acid Madness",
+      "bpm": 132,
+      "key": "Gm",
+      "mode": "Minor",
+      "duration": "07:30",
+      "durationSeconds": 450,
+      "energy": 8,
+      "genres": ["Acid Techno", "Peak Time"],
+      "color": "#06ffa5",
+      "notes": "GO CRAZY! 303 bassline wild. Push resonance to maximum. Crowd should go insane here.",
+      "transitionType": "Echo Out",
+      "transitionBars": 16,
+      "transitionNotes": "Echo out the acid line, keep drums",
+      "channels": [
+        {
+          "id": "ch-003-kick",
+          "type": "drums",
+          "name": "Hard Kick",
+          "midiChannel": 10,
+          "color": "#ff006e",
+          "notes": "Harder than previous track",
+          "typeSpecific": {
+            "pluginName": "Battery 4",
+            "presetName": "Hard Techno",
+            "patternNumber": "B1",
+            "swingAmount": 0,
+            "velocityCurve": "Linear"
+          }
+        },
+        {
+          "id": "ch-003-303",
+          "type": "external",
+          "name": "TB-303 Bass",
+          "midiChannel": 1,
+          "color": "#8338ec",
+          "notes": "MAIN ELEMENT! Go wild with filter and resonance automation",
+          "typeSpecific": {
+            "deviceType": "Synth",
+            "deviceModel": "Roland TB-303 (Behringer TD-3)",
+            "patchNumber": "A05",
+            "cvGateRouting": "MIDI to CV",
+            "audioRouting": "Mono",
+            "audioChannel": "3"
+          }
+        },
+        {
+          "id": "ch-003-lead",
+          "type": "synth",
+          "name": "Stab Lead",
+          "midiChannel": 2,
+          "color": "#00f0ff",
+          "notes": "Accent hits on downbeats",
+          "typeSpecific": {
+            "synthType": "Lead",
+            "pluginName": "Serum",
+            "presetName": "Techno Stab",
+            "layerNumber": 1,
+            "filterType": "Highpass",
+            "lfoSettings": ""
+          }
+        },
+        {
+          "id": "ch-003-autofilter",
+          "type": "automation",
+          "name": "303 Filter Automation",
+          "midiChannel": 0,
+          "color": "#3a86ff",
+          "notes": "Automate cutoff and resonance throughout track",
+          "typeSpecific": {
+            "parameterName": "Filter Cutoff",
+            "startValue": 30,
+            "endValue": 127,
+            "curveType": "Exponential"
+          }
+        },
+        {
+          "id": "ch-003-delay",
+          "type": "fx",
+          "name": "Dub Delay",
+          "midiChannel": 0,
+          "color": "#fb5607",
+          "notes": "Heavy delay on 303 for breakdown",
+          "typeSpecific": {
+            "fxType": "Delay",
+            "pluginName": "EchoBoy",
+            "presetName": "Dub Echo",
+            "sendAmount": 60,
+            "automation": "Increase in breakdown, reduce in drop"
+          }
+        }
+      ],
+      "sections": [
+        {
+          "id": "sec-003-intro",
+          "name": "Intro",
+          "startTime": 0,
+          "duration": 60
+        },
+        {
+          "id": "sec-003-build",
+          "name": "Build",
+          "startTime": 60,
+          "duration": 90
+        },
+        {
+          "id": "sec-003-drop",
+          "name": "Drop",
+          "startTime": 150,
+          "duration": 120
+        },
+        {
+          "id": "sec-003-breakdown",
+          "name": "Breakdown",
+          "startTime": 270,
+          "duration": 90
+        },
+        {
+          "id": "sec-003-final",
+          "name": "Final Drop",
+          "startTime": 360,
+          "duration": 90
+        }
+      ],
+      "createdAt": "2026-01-20T22:13:00.000Z"
+    },
+    {
+      "id": "track-004-breakdown",
+      "name": "Emotional Breakdown",
+      "bpm": 128,
+      "key": "Dm",
+      "mode": "Minor",
+      "duration": "06:00",
+      "durationSeconds": 360,
+      "energy": 4,
+      "genres": ["Melodic Techno", "Emotional"],
+      "color": "#f72585",
+      "notes": "Give people a breather. Emotional and melodic. Build tension for next peak.",
+      "transitionType": "Build Up",
+      "transitionBars": 32,
+      "transitionNotes": "Long build with rising white noise and increasing drums",
+      "channels": [
+        {
+          "id": "ch-004-pad",
+          "type": "synth",
+          "name": "Melodic Pad",
+          "midiChannel": 1,
+          "color": "#00f0ff",
+          "notes": "Emotional chord progression",
+          "typeSpecific": {
+            "synthType": "Pad",
+            "pluginName": "Omnisphere",
+            "presetName": "Emotional Strings",
+            "layerNumber": 2,
+            "filterType": "Lowpass",
+            "lfoSettings": "Slow vibrato"
+          }
+        },
+        {
+          "id": "ch-004-vocal",
+          "type": "vocal",
+          "name": "Vocal Sample",
+          "midiChannel": 3,
+          "color": "#06ffa5",
+          "notes": "Chopped and reversed, ethereal",
+          "typeSpecific": {
+            "sampleName": "vocal_ethereal_01.wav",
+            "processingChain": "Reverb -> Delay -> Chorus",
+            "keyPitch": "D",
+            "timeStretchSettings": "Complex Pro, -2 semitones"
+          }
+        },
+        {
+          "id": "ch-004-kick",
+          "type": "drums",
+          "name": "Soft Kick",
+          "midiChannel": 10,
+          "color": "#ff006e",
+          "notes": "Quieter, more gentle",
+          "typeSpecific": {
+            "pluginName": "Battery 4",
+            "presetName": "Soft Techno",
+            "patternNumber": "C1",
+            "swingAmount": 0,
+            "velocityCurve": "Exponential"
+          }
+        }
+      ],
+      "sections": [
+        {
+          "id": "sec-004-intro",
+          "name": "Intro",
+          "startTime": 0,
+          "duration": 90
+        },
+        {
+          "id": "sec-004-melody",
+          "name": "Melody",
+          "startTime": 90,
+          "duration": 120
+        },
+        {
+          "id": "sec-004-buildup",
+          "name": "Build Up",
+          "startTime": 210,
+          "duration": 150
+        }
+      ],
+      "createdAt": "2026-01-20T22:20:30.000Z"
+    },
+    {
+      "id": "track-005-peak",
+      "name": "Peak Time Destroyer",
+      "bpm": 135,
+      "key": "Am",
+      "mode": "Minor",
+      "duration": "10:00",
+      "durationSeconds": 600,
+      "energy": 10,
+      "genres": ["Hard Techno", "Industrial", "Peak Time"],
+      "color": "#ff006e",
+      "notes": "DESTROY THE DANCEFLOOR! Maximum energy. Ride this for full 10 minutes. No mercy!",
+      "transitionType": "Cut",
+      "transitionBars": 0,
+      "transitionNotes": "Hard cut to outro",
+      "channels": [
+        {
+          "id": "ch-005-kick",
+          "type": "external",
+          "name": "TR-909 Kick",
+          "midiChannel": 10,
+          "color": "#ff006e",
+          "notes": "MASSIVE KICK. Distorted and compressed to hell",
+          "typeSpecific": {
+            "deviceType": "Drum Machine",
+            "deviceModel": "Roland TR-909",
+            "patchNumber": "",
+            "cvGateRouting": "",
+            "audioRouting": "Mono",
+            "audioChannel": "1"
+          }
+        },
+        {
+          "id": "ch-005-bass",
+          "type": "synth",
+          "name": "Industrial Bass",
+          "midiChannel": 1,
+          "color": "#00f0ff",
+          "notes": "Distorted, aggressive, relentless",
+          "typeSpecific": {
+            "synthType": "Bass",
+            "pluginName": "Massive",
+            "presetName": "Industrial Mayhem",
+            "layerNumber": 1,
+            "filterType": "Lowpass",
+            "lfoSettings": ""
+          }
+        },
+        {
+          "id": "ch-005-lead",
+          "type": "synth",
+          "name": "Rave Stabs",
+          "midiChannel": 2,
+          "color": "#00f0ff",
+          "notes": "Classic rave stabs on accents",
+          "typeSpecific": {
+            "synthType": "Lead",
+            "pluginName": "Serum",
+            "presetName": "Rave Stab 2024",
+            "layerNumber": 1,
+            "filterType": "Bandpass",
+            "lfoSettings": ""
+          }
+        },
+        {
+          "id": "ch-005-hats",
+          "type": "drums",
+          "name": "Rolling Hi-Hats",
+          "midiChannel": 10,
+          "color": "#ff006e",
+          "notes": "32nd notes, build tension",
+          "typeSpecific": {
+            "pluginName": "Battery 4",
+            "presetName": "Hard Techno",
+            "patternNumber": "D1",
+            "swingAmount": 0,
+            "velocityCurve": "Linear"
+          }
+        },
+        {
+          "id": "ch-005-distortion",
+          "type": "fx",
+          "name": "Drum Distortion",
+          "midiChannel": 0,
+          "color": "#fb5607",
+          "notes": "Heavy distortion on drum bus",
+          "typeSpecific": {
+            "fxType": "Distortion",
+            "pluginName": "Decapitator",
+            "presetName": "Punish",
+            "sendAmount": 100,
+            "automation": ""
+          }
+        },
+        {
+          "id": "ch-005-master",
+          "type": "master",
+          "name": "Master Bus",
+          "midiChannel": 0,
+          "color": "#ffffff",
+          "notes": "Glue compression + limiter",
+          "typeSpecific": {
+            "busName": "Master",
+            "routing": "All -> Master",
+            "fxChain": "SSL Comp -> Invisible Limiter",
+            "level": -0.3
+          }
+        }
+      ],
+      "sections": [
+        {
+          "id": "sec-005-drop",
+          "name": "Drop",
+          "startTime": 0,
+          "duration": 120
+        },
+        {
+          "id": "sec-005-ride",
+          "name": "Ride",
+          "startTime": 120,
+          "duration": 300
+        },
+        {
+          "id": "sec-005-final",
+          "name": "Final Push",
+          "startTime": 420,
+          "duration": 180
+        }
+      ],
+      "createdAt": "2026-01-20T22:26:30.000Z"
+    },
+    {
+      "id": "track-006-outro",
+      "name": "Hypnotic Outro",
+      "bpm": 126,
+      "key": "Em",
+      "mode": "Minor",
+      "duration": "07:00",
+      "durationSeconds": 420,
+      "energy": 6,
+      "genres": ["Deep Techno", "Hypnotic"],
+      "color": "#4cc9f0",
+      "notes": "Wind down slowly. Keep them dancing but reduce intensity. Smooth ending.",
+      "transitionType": "Fade",
+      "transitionBars": 64,
+      "transitionNotes": "Long fade out over 2 minutes",
+      "channels": [
+        {
+          "id": "ch-006-kick",
+          "type": "drums",
+          "name": "Deep Kick",
+          "midiChannel": 10,
+          "color": "#ff006e",
+          "notes": "Back to deep and groovy",
+          "typeSpecific": {
+            "pluginName": "Battery 4",
+            "presetName": "Deep House",
+            "patternNumber": "E1",
+            "swingAmount": 10,
+            "velocityCurve": "Logarithmic"
+          }
+        },
+        {
+          "id": "ch-006-bass",
+          "type": "synth",
+          "name": "Rolling Bass",
+          "midiChannel": 1,
+          "color": "#00f0ff",
+          "notes": "Hypnotic rolling pattern",
+          "typeSpecific": {
+            "synthType": "Bass",
+            "pluginName": "Serum",
+            "presetName": "Deep Roll",
+            "layerNumber": 1,
+            "filterType": "Lowpass",
+            "lfoSettings": "LFO1 -> Filter, 1/8"
+          }
+        },
+        {
+          "id": "ch-006-pad",
+          "type": "synth",
+          "name": "Closing Pad",
+          "midiChannel": 2,
+          "color": "#00f0ff",
+          "notes": "Bring back atmospheric vibes",
+          "typeSpecific": {
+            "synthType": "Pad",
+            "pluginName": "Omnisphere",
+            "presetName": "Deep Space",
+            "layerNumber": 1,
+            "filterType": "Lowpass",
+            "lfoSettings": ""
+          }
+        }
+      ],
+      "sections": [
+        {
+          "id": "sec-006-intro",
+          "name": "Intro",
+          "startTime": 0,
+          "duration": 120
+        },
+        {
+          "id": "sec-006-groove",
+          "name": "Groove",
+          "startTime": 120,
+          "duration": 180
+        },
+        {
+          "id": "sec-006-outro",
+          "name": "Fade Out",
+          "startTime": 300,
+          "duration": 120
+        }
+      ],
+      "createdAt": "2026-01-20T22:36:30.000Z"
+    }
+  ]
+}
+

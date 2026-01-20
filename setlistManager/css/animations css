@@ -1,0 +1,376 @@
+/* ===== ENTRANCE ANIMATIONS ===== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Apply animations */
+.app-header {
+    animation: fadeInDown 0.6s ease-out;
+}
+
+.setlist-sidebar {
+    animation: slideInLeft 0.6s ease-out;
+}
+
+.songs-sidebar {
+    animation: slideInRight 0.6s ease-out;
+}
+
+.song-view {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.list-item {
+    animation: fadeInUp 0.4s ease-out backwards;
+}
+
+.list-item:nth-child(1) { animation-delay: 0.05s; }
+.list-item:nth-child(2) { animation-delay: 0.1s; }
+.list-item:nth-child(3) { animation-delay: 0.15s; }
+.list-item:nth-child(4) { animation-delay: 0.2s; }
+.list-item:nth-child(5) { animation-delay: 0.25s; }
+
+.snapshot-btn {
+    animation: scaleIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) backwards;
+}
+
+.snapshot-btn:nth-child(1) { animation-delay: 0.05s; }
+.snapshot-btn:nth-child(2) { animation-delay: 0.1s; }
+.snapshot-btn:nth-child(3) { animation-delay: 0.15s; }
+.snapshot-btn:nth-child(4) { animation-delay: 0.2s; }
+.snapshot-btn:nth-child(5) { animation-delay: 0.25s; }
+.snapshot-btn:nth-child(6) { animation-delay: 0.3s; }
+
+/* ===== MODAL ANIMATIONS ===== */
+
+.modal-overlay {
+    animation: fadeIn 0.3s ease;
+}
+
+.modal {
+    animation: modalBounceIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes modalBounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.7) translateY(-50px);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* ===== SNAPSHOT TRIGGER ANIMATION ===== */
+
+@keyframes snapshotPulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 8px 40px rgba(102, 126, 234, 0.6);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+    }
+}
+
+.snapshot-btn.triggered {
+    animation: snapshotPulse 0.4s ease;
+}
+
+/* ===== LOADING ANIMATIONS ===== */
+
+.loading-spinner {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-dots::after {
+    content: '';
+    animation: loadingDots 1.5s infinite;
+}
+
+@keyframes loadingDots {
+    0%, 20% {
+        content: '.';
+    }
+    40% {
+        content: '..';
+    }
+    60%, 100% {
+        content: '...';
+    }
+}
+
+/* ===== MIDI STATUS PULSE ===== */
+
+@keyframes statusPulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(1.2);
+    }
+}
+
+.midi-status.connected .status-dot {
+    animation: statusPulse 2s ease-in-out infinite;
+}
+
+/* ===== SONG CHANGE TRANSITION ===== */
+
+.song-changing .current-song {
+    animation: songChangeOut 0.3s ease-out;
+}
+
+@keyframes songChangeOut {
+    to {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+}
+
+.song-changed .current-song {
+    animation: songChangeIn 0.3s ease-out;
+}
+
+@keyframes songChangeIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ===== BUTTON HOVER EFFECTS ===== */
+
+.btn,
+.snapshot-btn,
+.nav-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before,
+.snapshot-btn::before,
+.nav-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn:hover::before,
+.snapshot-btn:hover::before,
+.nav-btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* ===== NOTIFICATION TOAST ===== */
+
+.toast {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--bg-card);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--primary);
+    animation: toastSlideIn 0.4s ease, toastSlideOut 0.4s ease 2.6s;
+    z-index: 10000;
+}
+
+@keyframes toastSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(400px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes toastSlideOut {
+    to {
+        opacity: 0;
+        transform: translateX(400px);
+    }
+}
+
+.toast.success {
+    border-left-color: var(--success);
+}
+
+.toast.error {
+    border-left-color: var(--danger);
+}
+
+.toast.warning {
+    border-left-color: var(--warning);
+}
+
+/* ===== SKELETON LOADING ===== */
+
+.skeleton {
+    background: linear-gradient(
+        90deg,
+        var(--bg-card) 25%,
+        var(--bg-light) 50%,
+        var(--bg-card) 75%
+    );
+    background-size: 200% 100%;
+    animation: skeletonLoading 1.5s ease-in-out infinite;
+    border-radius: var(--radius);
+}
+
+@keyframes skeletonLoading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* ===== GLOW EFFECTS ===== */
+
+.glow {
+    position: relative;
+}
+
+.glow::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    border-radius: inherit;
+    z-index: -1;
+    opacity: 0;
+    filter: blur(10px);
+    transition: opacity 0.3s ease;
+}
+
+.glow:hover::after {
+    opacity: 0.7;
+}
+
+/* ===== MICRO-INTERACTIONS ===== */
+
+.list-item:active {
+    transform: scale(0.98);
+}
+
+.icon-btn:active {
+    transform: scale(0.9);
+}
+
+.snapshot-btn:active {
+    transform: scale(0.95);
+}
+
+/* Smooth transitions for all interactive elements */
+.btn,
+.list-item,
+.snapshot-btn,
+.icon-btn,
+.nav-btn {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
